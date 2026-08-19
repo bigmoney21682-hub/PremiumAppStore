@@ -45,7 +45,7 @@ window.CATALOG = [
         name: 'MyTube',
         tagline: 'Your videos, your way.',
         url: 'https://itsmytube.com',
-        icon: 'assets/icons/mytube.png',
+        icon: 'assets/icons/mytube.svg',
         description:
           'A fast, lightweight video PWA with playlists, auto-next, and background audio — so the sound keeps going when the screen goes dark. Built to stay out of the way of the thing you actually came to watch.',
         note: 'Inside the app, click the title “MyTube” to get to MyFlix and MyTV.'
