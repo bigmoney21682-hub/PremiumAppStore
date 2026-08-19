@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Premium App Store</title>
+<meta name="description" content="PWAs that can be used from any device. Always private, always free, no ads, no bs." />
+<meta name="theme-color" content="#000000" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta property="og:title" content="Premium App Store" />
+<meta property="og:description" content="PWAs that can be used from any device. Always private, always free, no ads, no bs." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="assets/icons/favicon.svg" />
+<link rel="manifest" href="manifest.webmanifest" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="crest" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="56" height="56">
+      <defs>
+        <linearGradient id="crestGold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#fbf0c4"/>
+          <stop offset="42%" stop-color="#d4af37"/>
+          <stop offset="70%" stop-color="#9d7620"/>
+          <stop offset="100%" stop-color="#f3dfa0"/>
+        </linearGradient>
+      </defs>
+      <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="url(#crestGold)" stroke-width="2.5"/>
+      <path d="M32 17 L37.6 28.4 L50 30.2 L41 39 L43.1 51.4 L32 45.5 L20.9 51.4 L23 39 L14 30.2 L26.4 28.4 Z" fill="url(#crestGold)"/>
+    </svg>
+  </div>
+  <h1 class="wordmark">Premium App Store</h1>
+  <p class="subtitle">
+    PWAs <span class="dim">(Progressive Web Apps)</span> that can be used from any device;
+    Phone, Computer, TV, Car, etc.
+  </p>
+  <p class="creed">Always private &middot; Always free &middot; No ads &middot; No bs.</p>
+  <div class="rule" aria-hidden="true"></div>
+</header>
+
+<main id="shelf" class="shelf">
+  <!-- categories render here -->
+</main>
+
+<footer class="footer">
+  <div class="rule" aria-hidden="true"></div>
+  <p class="footer-line"><span class="count" id="appCount"></span> apps &middot; more on the way</p>
+  <p class="footer-fine">Built with care. Nothing tracks you here.</p>
+</footer>
+
+<!-- ============ APP DETAIL SHEET ============ -->
+<div class="overlay" id="overlay" hidden>
+  <div class="scrim" data-close></div>
+
+  <article class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" tabindex="-1">
+    <button class="sheet-close" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="sheet-scroll">
+      <div class="sheet-head">
+        <div class="sheet-icon" id="sheetIcon"></div>
+        <div class="sheet-headtext">
+          <h2 class="sheet-title" id="sheetTitle"></h2>
+          <p class="sheet-tagline" id="sheetTagline"></p>
+          <p class="sheet-cat" id="sheetCat"></p>
+        </div>
+      </div>
+
+      <div class="sheet-actions">
+        <a class="btn btn-gold" id="btnOpen" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+            <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Open App</span>
+        </a>
+        <button class="btn btn-ghost" id="btnShare" type="button">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true">
+            <path d="M12 3v13M12 3l-4 4M12 3l4 4M5 14v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Share</span>
+        </button>
+      </div>
+
+      <section class="shots-wrap">
+        <h3 class="section-label">Screenshots</h3>
+        <div class="shots" id="sheetShots"></div>
+      </section>
+
+      <section class="about">
+        <h3 class="section-label">About</h3>
+        <p class="about-text" id="sheetDesc"></p>
+        <p class="about-note" id="sheetNote" hidden></p>
+      </section>
+
+      <section class="linkrow">
+        <h3 class="section-label">Address</h3>
+        <button class="urlchip" id="urlChip" type="button" title="Copy link">
+          <span class="urlchip-text" id="urlChipText"></span>
+          <span class="urlchip-copy">Copy</span>
+        </button>
+      </section>
+    </div>
+  </article>
+</div>
+
+<!-- ============ SHARE SHEET ============ -->
+<div class="overlay overlay-share" id="shareOverlay" hidden>
+  <div class="scrim" data-share-close></div>
+  <div class="sharesheet" role="dialog" aria-modal="true" aria-labelledby="shareTitle">
+    <div class="grabber" aria-hidden="true"></div>
+    <h3 class="share-title" id="shareTitle">Share</h3>
+    <p class="share-sub" id="shareSub"></p>
+    <div class="share-grid" id="shareGrid"></div>
+    <button class="share-cancel" type="button" data-share-close>Cancel</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="apps.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
