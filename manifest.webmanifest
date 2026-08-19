@@ -1,7 +1,7 @@
 {
   "name": "Premium App Store",
   "short_name": "App Store",
-  "description": "PWAs that can be used from any device. Always private, always free, no ads, no bs.",
+  "description": "High quality PWAs that can be used from any device. Always private, always free, no ads, no bs.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
