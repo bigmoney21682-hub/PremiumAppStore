@@ -5,7 +5,7 @@
   'use strict';
 
   var CATALOG = window.CATALOG || [];
-  var SHOT_EXTS = ['png', 'jpg', 'webp'];   // tried in order, per screenshot
+  var SHOT_EXTS = ['png', 'jpg', 'jpeg', 'webp'];   // tried in order, per screenshot
   var SHOT_COUNT = 3;
 
   var $ = function (id) { return document.getElementById(id); };
