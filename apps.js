@@ -101,11 +101,10 @@ window.CATALOG = [
         slug: 'pcb-analyzer',
         name: 'PCB Analyzer',
         tagline: 'Point a camera at the board.',
-        soon: true,                 // greyed out until it has a public address
-        url: null,
+        url: 'https://bigmoney21682-hub.github.io/pcbanalyzer/',
         icon: 'assets/icons/pcb-analyzer.svg',
         description:
-          'Photograph a circuit board with your phone and get a plain-English breakdown of what it does, what is on it, and how power flows through it. It reads part numbers and reference designators off the silkscreen, identifies packages, works out the power chain, and groups parts into functional blocks. Installable PWA, no backend — it runs entirely in the browser.'
+          'Photograph a circuit board with your phone and get a plain-English breakdown of what it does, what is on it, and how power flows through it. It reads part numbers and reference designators off the silkscreen, identifies packages, works out the power chain, and groups parts into functional blocks. Saves every analysis so a board can be looked up again later.'
       },
       {
         slug: 'schematic-analyzer',
@@ -114,7 +113,7 @@ window.CATALOG = [
         url: 'https://bigmoney21682-hub.github.io/SchematicAnalyzer/',
         icon: 'assets/icons/schematic-analyzer.svg',
         description:
-          'Upload a schematic and get a block diagram of the circuit, every supply rail and where it comes from, which grounds are actually the same net, what each LED is telling you, and where to put a probe — then ask follow-up questions about the sheet. Runs in the browser against your own Gemini key; there is no backend and nothing passes through the host serving the app.'
+          'Upload a schematic and get a block diagram of the circuit, every supply rail and where it comes from, which grounds are actually the same net, what each LED is telling you, and where to put a probe — then ask follow-up questions about the sheet. Bring your own Gemini key and it runs browser-to-Google with no server in between; without one it falls back to a shared, rate-limited service so the link still works.'
       },
       {
         slug: 'image-analysis',
@@ -123,7 +122,7 @@ window.CATALOG = [
         url: 'https://bigmoney21682-hub.github.io/ImageAnalysis/',
         icon: 'assets/icons/image-analysis.svg',
         description:
-          'Upload a medical image and get back two things, kept strictly apart: imaging artifacts — what is in the picture but not in the patient, with what each one could be mistaken for — and findings, what is in the patient, described before it is interpreted, with a differential. Then ask follow-up questions about the same image with the report already in context. A static PWA that runs entirely in the browser against your own Gemini key.'
+          'Upload a medical image and get back two things, kept strictly apart: imaging artifacts — what is in the picture but not in the patient, with what each one could be mistaken for — and findings, what is in the patient, described before it is interpreted, with a differential. Then ask follow-up questions about the same image with the report already in context. With your own Gemini key it runs browser-to-Google and no image touches a server in between — the point, not a detail, for medical images. Without a key it falls back to a shared, rate-limited service; turn that off in Settings to keep every image local to your browser and Google.'
       },
       {
         slug: 'shim-ball',
