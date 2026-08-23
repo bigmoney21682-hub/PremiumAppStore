@@ -79,8 +79,7 @@ window.CATALOG = [
         slug: 'mri-guru',
         name: 'MRI Guru',
         tagline: 'What has fixed this before.',
-        soon: true,                 // greyed out: runs on the Mac, no public host yet
-        url: null,
+        url: 'https://macs-macbook-pro.tail8bfd8c.ts.net',
         icon: 'assets/icons/mri-guru.svg',
         description:
           'Describe a problem on an MRI system and get back a numbered list of things to try, ranked from thousands of completed service work orders and grouped by cause — with the full resolve text of every job sitting behind each one. Oasis, Oasis Velocity, Airis Elite and Altaire are loaded today, and each new system is one Excel export away. The search runs in the browser; the work-order data never leaves the server it is signed in to.',
@@ -90,12 +89,11 @@ window.CATALOG = [
         slug: 'mri-acoustic-analyzer',
         name: 'MRI Acoustic Analyzer',
         tagline: 'Gantry Ear — hear the rattle.',
-        soon: true,                 // greyed out until it has a public address
-        url: null,
+        url: 'https://macs-macbook-pro.tail8bfd8c.ts.net:10000',
         icon: 'assets/icons/mri-acoustic-analyzer.png',
         description:
           'Find loose fasteners, rattles, and rubbing metal in an MRI gantry by listening with a phone while you sweep it across the bore. The app reads the sound and points at where the noise is coming from, so a service call starts with a location instead of a guess.',
-        note: 'Safety: a phone is ferromagnetic and the magnet is always on — follow your site protocol for Zone IV. Gradient noise routinely exceeds 110 dB SPL; wear hearing protection.'
+        note: 'Sign-in required. Safety: a phone is ferromagnetic and the magnet is always on — follow your site protocol for Zone IV. Gradient noise routinely exceeds 110 dB SPL; wear hearing protection.'
       },
       {
         slug: 'pcb-analyzer',
