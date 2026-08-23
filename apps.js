@@ -76,6 +76,17 @@ window.CATALOG = [
         note: 'Sign-in required.'
       },
       {
+        slug: 'mri-guru',
+        name: 'MRI Guru',
+        tagline: 'What has fixed this before.',
+        soon: true,                 // greyed out: runs on the Mac, no public host yet
+        url: null,
+        icon: 'assets/icons/mri-guru.svg',
+        description:
+          'Describe a problem on an MRI system and get back a numbered list of things to try, ranked from thousands of completed service work orders and grouped by cause — with the full resolve text of every job sitting behind each one. Oasis, Oasis Velocity, Airis Elite and Altaire are loaded today, and each new system is one Excel export away. The search runs in the browser; the work-order data never leaves the server it is signed in to.',
+        note: 'Sign-in required.'
+      },
+      {
         slug: 'mri-acoustic-analyzer',
         name: 'MRI Acoustic Analyzer',
         tagline: 'Gantry Ear — hear the rattle.',
@@ -113,6 +124,32 @@ window.CATALOG = [
         icon: 'assets/icons/image-analysis.svg',
         description:
           'Upload a medical image and get back two things, kept strictly apart: imaging artifacts — what is in the picture but not in the patient, with what each one could be mistaken for — and findings, what is in the patient, described before it is interpreted, with a differential. Then ask follow-up questions about the same image with the report already in context. A static PWA that runs entirely in the browser against your own Gemini key.'
+      },
+      {
+        slug: 'shim-ball',
+        name: 'Shim Ball',
+        tagline: 'Poke the beach ball.',
+        url: 'https://shim-ball-plot.surge.sh',
+        icon: 'assets/icons/shim-ball.svg',
+        description:
+          'A solid, interactive rebuild of the Excel 3D shim plot: a sphere that dents where the field reads negative and bulges where it reads positive, so a shim map becomes something you rotate instead of something you squint at. Drive it from the same X/Y/Z angles as the spreadsheet sliders, dial poke depth and colour intensity, and edit any cell of the plane x angle grid to reshape the ball live. Datasets save straight to the browser.',
+        note: 'Sign-in required.'
+      }
+    ]
+  },
+  {
+    category: 'Games',
+    blurb: 'For the downtime.',
+    apps: [
+      {
+        slug: 'mygotchi',
+        name: 'MyGotchi',
+        tagline: 'A household of cats.',
+        url: 'https://bigmoney21682-hub.github.io/MyGotchi/',
+        icon: 'assets/icons/mygotchi.svg',
+        description:
+          'A Tamagotchi x Talking Tom hybrid: adopt up to six cats, keep them fed, watered and played with, and talk to them. Eleven breeds are drawn procedurally on a canvas and every sound is synthesized on the fly, so there is not a single image or audio file behind it. Needs drain in real time whether the app is open or not, three minigames count toward the daily play, and Repeat mode plays your own voice back pitched up. Rehome a cat to the adoption centre and take them back whenever you want.',
+        note: 'Talk and Repeat modes need microphone permission.'
       }
     ]
   }
