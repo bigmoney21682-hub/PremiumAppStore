@@ -139,6 +139,16 @@ window.CATALOG = [
     blurb: 'For the downtime.',
     apps: [
       {
+        slug: 'zombie-hunter',
+        name: 'Zombie Hunter',
+        tagline: 'Clear the island together.',
+        url: 'https://zombie-hunter.onrender.com',
+        icon: 'assets/icons/zombie-hunter.svg',
+        description:
+          'A co-op zombie battle royale you play in the browser. Drop onto Cinder Isle with your squad, scavenge one of seven guns, and wipe out the horde before the ten-minute clock runs out — no friendly fire, unlimited respawns, and unlimited ammo. The only cost of firing is noise: every gun has its own noise radius, so an MP5 clears a house without waking the street while the DMR thins a landmark from a ridge and pulls the next one toward you. Zombies idle at the nine landmarks until they see you inside their vision cone or hear you shoot, and the minimap colours each one by whether it has noticed you — so the island gets cleared on your schedule. First or third person, pointer-locked mouse on desktop, twin sticks and a thumb-side fire button on a phone.',
+        note: 'Open in two tabs or send the link to a friend to play co-op. Runs on a free server that sleeps — the first load can take a moment to wake it.'
+      },
+      {
         slug: 'mygotchi',
         name: 'MyGotchi',
         tagline: 'A household of cats.',
