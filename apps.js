@@ -69,7 +69,7 @@ window.CATALOG = [
         slug: 'parts-agent',
         name: 'Parts Agent',
         tagline: 'Ask for the part. Get the part.',
-        url: 'https://mri-parts-agent.vercel.app',
+        url: 'https://mri-parts-agent.pages.dev',
         icon: 'assets/icons/parts-agent.svg',
         description:
           'A chat-first assistant for MRI parts. Describe what you are looking at or what failed, and work the conversation toward the right part number, diagram, and documentation — instead of digging through catalogs on a service call.',
