@@ -58,6 +58,15 @@ window.CATALOG = [
         icon: 'assets/icons/3d-print-master.png',
         description:
           'Photograph an object from every side and get an STL you can slice and print. Eight or more photos around a turntable become a solid 3D model; a single photo becomes a raised relief, a lithophane, or a flat cut-out. A built-in FDM slicer finishes the job on any model you make or any STL you open. Everything runs in the browser — nothing is uploaded, and there is no server behind it.'
+      },
+      {
+        slug: 'media-editor',
+        name: 'Media Editor',
+        tagline: 'Drop a photo. Take it apart.',
+        url: 'https://bigmoney21682-hub.github.io/MediaEditor/',
+        icon: 'assets/icons/media-editor.svg',
+        description:
+          'A layered photo editor that opens with a drag, a paste, or a file. Stack layers with real blend modes and opacity, crop, brush, erase, draw rectangles, ellipses, lines and arrows, set type, and drop in more images — with undo, redo, and keyboard shortcuts for every tool. Export the result as PNG, JPEG or WebP, a PDF, an SVG, a short Ken Burns or dissolve video your browser records live, or a project file you can reopen and keep editing. Age Transform ages a face up or down on the device by default; add your own Gemini key to run it through an image model instead. Everything runs in the browser and works offline — nothing is uploaded.'
       }
     ]
   },

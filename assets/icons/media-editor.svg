@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Media Editor">
+  <defs>
+    <linearGradient id="me-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbf0c4"/><stop offset="26%" stop-color="#e7cc72"/>
+      <stop offset="52%" stop-color="#d4af37"/><stop offset="76%" stop-color="#9d7620"/>
+      <stop offset="100%" stop-color="#f3dfa0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#0f1115"/>
+  <!-- Stacked layers, back to front -->
+  <rect x="146" y="118" width="248" height="164" rx="20" fill="#161b23" stroke="#2a333f" stroke-width="8"/>
+  <rect x="126" y="158" width="248" height="164" rx="20" fill="#1b222c" stroke="#33404f" stroke-width="8"/>
+  <!-- The active layer: the canvas being edited -->
+  <rect x="106" y="198" width="248" height="164" rx="20" fill="#0b0e14" stroke="url(#me-gold)" stroke-width="10"/>
+  <!-- A brush stroke across it -->
+  <path d="M140 320 C 186 256 224 300 262 262 C 292 232 316 246 332 232"
+        fill="none" stroke="url(#me-gold)" stroke-width="16" stroke-linecap="round"/>
+  <!-- Brush, poised at the end of the stroke -->
+  <g stroke="#f6e6a8" stroke-width="14" stroke-linecap="round">
+    <path d="M348 218 L396 158"/>
+  </g>
+  <circle cx="404" cy="148" r="20" fill="url(#me-gold)"/>
+</svg>
