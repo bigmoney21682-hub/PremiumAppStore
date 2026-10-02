@@ -34,7 +34,6 @@ The folders are already created for all nine apps:
 | The Weather           | `assets/screenshots/the-weather/`       |
 | MyTube                | `assets/screenshots/mytube/`            |
 | 3d Print Master       | `assets/screenshots/3d-print-master/`   |
-| Parts Agent           | `assets/screenshots/parts-agent/`       |
 | MRI Acoustic Analyzer | `assets/screenshots/mri-acoustic-analyzer/` |
 | PCB Analyzer          | `assets/screenshots/pcb-analyzer/`      |
 | Schematic Analyzer    | `assets/screenshots/schematic-analyzer/`|

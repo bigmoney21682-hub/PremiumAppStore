@@ -75,26 +75,6 @@ window.CATALOG = [
     blurb: 'For the field.',
     apps: [
       {
-        slug: 'parts-agent',
-        name: 'Parts Agent',
-        tagline: 'Ask for the part. Get the part.',
-        url: 'https://mri-parts-agent.pages.dev',
-        icon: 'assets/icons/parts-agent.svg',
-        description:
-          'A chat-first assistant for MRI parts. Describe what you are looking at or what failed, and work the conversation toward the right part number, diagram, and documentation — instead of digging through catalogs on a service call.',
-        note: 'Sign-in required.'
-      },
-      {
-        slug: 'mri-guru',
-        name: 'MRI Guru',
-        tagline: 'What has fixed this before.',
-        url: 'https://macs-macbook-pro.tail8bfd8c.ts.net',
-        icon: 'assets/icons/mri-guru.svg',
-        description:
-          'Describe a problem on an MRI system and get back a numbered list of things to try, ranked from thousands of completed service work orders and grouped by cause — with the full resolve text of every job sitting behind each one. Oasis, Oasis Velocity, Airis Elite and Altaire are loaded today, and each new system is one Excel export away. The search runs in the browser; the work-order data never leaves the server it is signed in to.',
-        note: 'Sign-in required.'
-      },
-      {
         slug: 'mri-acoustic-analyzer',
         name: 'MRI Acoustic Analyzer',
         tagline: 'Gantry Ear — hear the rattle.',
