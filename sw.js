@@ -1,5 +1,5 @@
 /* Offline shell for the storefront. Screenshots and icons cache as they load. */
-const CACHE = 'premium-app-store-v2';
+const CACHE = 'premium-app-store-v3';
 const SHELL = ['./', './index.html', './styles.css', './apps.js', './app.js',
                './manifest.webmanifest', './assets/icons/favicon.svg'];
 
